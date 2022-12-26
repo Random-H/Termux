@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>infomaton</title>
+    <title>info</title>
 </head>
 <body>
-    <?php
-        echo "wsswssw";
-    ?>
+    <form action="tx.php" method="post">
+        你的邮箱:<input type="text" name="email"><br>
+        <input type="submit" value="催促">
+    </from>
 </body>
 </html>
