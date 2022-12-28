@@ -24,7 +24,7 @@ os.system("cp ~/Termux/conf/www.conf $PREFIX/etc/php-fpm.d/www.conf")
 path = "/storage/emulated/0/www"
 if os.path.exists(path):
     print("===============================================\n")
-    print("%s已存在，请先将路径下的文件移至他出并删除www文件夹")
+    print("%s已存在，请先将路径下的文件移至他出并删除www文件夹"%path)
     print("===============================================")
 os.mkdir(path)
 if os.path.exists(path):
