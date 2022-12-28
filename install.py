@@ -1,4 +1,11 @@
 import os
+print("=======================================================\n")
+print("确保已经执行过termux-setup-storage命令，如果没有则会出错\n")
+print("=======================================================\n")
+ok = input("输入y继续，n退出")
+if ok == 'n':
+    exit
+
 os.system("cd ~")
 #更新软件包
 os.system("rm $PREFIX/etc/apt/sources.list")
@@ -14,10 +21,7 @@ os.system("mv $PREFIX/etc/php-fpm.d/www.conf.bak")
 os.system("cp conf/www.conf $PREFIX/etc/php-fpm.d/www.conf")
 #创建网页目录
 path = "/storage/emulated/0/www"
-if  os.mkdir(path):
-    print("=======================================================\n")
-    print("请先执行termux-setup-storage,获取本机存储权限再执行python install.py\n")
-    print("=======================================================")
+os.mkdir(path)
 if os.path.exists(path):
     print("=======================================================\n")
     print("1.创建www文件夹成功，路径为%s\n"%path)
