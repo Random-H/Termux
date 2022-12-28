@@ -17,7 +17,7 @@
 <body>
     <div class="main_div">
         <br>
-    <form action="http://101.35.155.56/test.php" method="post">
+    <form action="http://101.35.155.56/post.php" method="post">
         你的邮箱:<input type="text" name="email"><br><br>
         你的建议:<input type="text" name="advice"><br><br>
         <input type="submit" value="提交"><br><br>
